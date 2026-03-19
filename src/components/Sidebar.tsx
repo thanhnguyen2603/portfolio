@@ -48,9 +48,13 @@ export default function Sidebar() {
     <>
       {/* Mobile header */}
       <div className="lg:hidden fixed top-0 left-0 right-0 z-50 h-14 bg-[#0b0f1a]/95 backdrop-blur-md border-b border-slate-800/50 flex items-center justify-between px-5">
-        <span className="text-[13px] font-bold text-slate-200 tracking-tight">
-          XT<span className="text-blue-400">.</span>
-        </span>
+        <Image
+          src="/avatar.jpg"
+          alt="Xuan Thanh"
+          width={32}
+          height={32}
+          className="rounded-full object-cover"
+        />
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
           className="w-9 h-9 flex items-center justify-center text-slate-300 hover:text-blue-400 rounded-lg hover:bg-slate-800/50 transition-all"
